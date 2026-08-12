@@ -790,69 +790,7 @@ input {
 .lifecycle-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-.lifecycle-card {
-  background: var(--color-white);
-  border-radius: var(--radius-lg);
-  padding: 24px 16px;
-  text-align: center;
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-gray-200);
-  transition: all var(--transition-base);
-  cursor: pointer;
-}
-
-.lifecycle-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-primary-200);
-}
-
-.lifecycle-card__icon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto 14px;
-  background: var(--color-primary-50);
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  transition: all var(--transition-base);
-}
-
-.lifecycle-card:hover .lifecycle-card__icon {
-  background: var(--color-primary-100);
-  transform: scale(1.08);
-}
-
-.lifecycle-card__title {
-  font-size: var(--font-size-base);
-  font-weight: 700;
-  color: var(--color-gray-900);
-  margin-bottom: 6px;
-}
-
-.lifecycle-card__desc {
-  font-size: var(--font-size-xs);
-  color: var(--color-gray-500);
-  margin-bottom: 14px;
-  line-height: 1.5;
-}
-
-.lifecycle-card__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--color-primary-600);
-}
-
-.lifecycle-card__link:hover {
-  gap: 8px;
+  gap: 18px;
 }
 
 /* ============================================
