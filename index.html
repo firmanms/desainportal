@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portal Layanan Pemerintah Kabupaten Bandung - Satu portal untuk berbagai layanan publik yang mudah, cepat dan transparan.">
+  <meta name="keywords" content="Kabupaten Bandung, layanan publik, pemerintah, portal layanan, Bandung">
+  <meta name="author" content="Pemerintah Kabupaten Bandung">
+  <title>Portal Layanan Pemerintah Kabupaten Bandung</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========== EMERGENCY BAR ========== -->
+  <div class="emergency-bar" id="emergencyBar">
+    <div class="container">
+      <div class="emergency-bar__left">
+        <span class="emergency-bar__icon">🚨</span>
+        <span style="font-size:0.85rem; font-weight:600;">DARURAT ? HUBUNGI SEGERA</span>
+        <span class="emergency-bar__number">112</span>
+        <span class="emergency-bar__text">Layanan Panggilan Darurat 24 Jam (Bebas Pulsa)</span>
+      </div>
+      <a href="tel:112" class="emergency-bar__btn">
+        📞 Telepon 112
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="mainNav">
+    <div class="container">
+      <a href="#" class="navbar__brand">
+        <div class="navbar__logo"><img src="assets/images/logo.png" alt="Logo Kabupaten Bandung" width="32" height="32"></div>
+        <div class="navbar__brand-text">
+          <span class="navbar__brand-title">Portal Layanan</span>
+          <span class="navbar__brand-subtitle">Pemerintah Kabupaten Bandung</span>
+        </div>
+      </a>
+
+      <ul class="navbar__menu" id="mainMenu">
+        <li class="navbar__menu-item">
+          <a href="#" class="navbar__menu-link navbar__menu-link--active">Beranda</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="#" class="navbar__menu-link">
+            Layanan <span class="chevron">▾</span>
+          </a>
+          <div class="navbar__dropdown">
+            <a href="#" class="navbar__dropdown-link">Layanan Kependudukan</a>
+            <a href="#" class="navbar__dropdown-link">Layanan Perizinan</a>
+            <a href="#" class="navbar__dropdown-link">Layanan Kesehatan</a>
+            <a href="#" class="navbar__dropdown-link">Layanan Pendidikan</a>
+            <a href="#" class="navbar__dropdown-link">Layanan Sosial</a>
+          </div>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="#" class="navbar__menu-link">
+            Informasi <span class="chevron">▾</span>
+          </a>
+          <div class="navbar__dropdown">
+            <a href="#" class="navbar__dropdown-link">Pengumuman</a>
+            <a href="#" class="navbar__dropdown-link">Berita</a>
+            <a href="#" class="navbar__dropdown-link">Agenda</a>
+            <a href="#" class="navbar__dropdown-link">Statistik</a>
+          </div>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="#" class="navbar__menu-link">Artikel</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="#" class="navbar__menu-link">Tentang Kami</a>
+        </li>
+      </ul>
+
+      <div class="navbar__actions">
+        <a href="#" class="navbar__login-btn">
+          👤 Login
+        </a>
+        <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__close">
+        <button class="mobile-menu__close-btn" id="mobileMenuClose">✕</button>
+      </div>
+      <a href="#" class="mobile-menu__link">Beranda</a>
+      <a href="#" class="mobile-menu__link">Layanan</a>
+      <a href="#" class="mobile-menu__link">Informasi</a>
+      <a href="#" class="mobile-menu__link">Artikel</a>
+      <a href="#" class="mobile-menu__link">Tentang Kami</a>
+      <a href="#" class="mobile-menu__login">Login</a>
+    </div>
+  </div>
+
+  <!-- ========== HERO SLIDER ========== -->
+  <section class="hero" id="heroSection">
+    <div class="hero__slider">
+      <!-- Slide 1 -->
+      <div class="hero__slide hero__slide--active">
+        <img src="assets/images/hero-bg.png" alt="Gedung Sate Bandung" class="hero__slide-image">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <div class="hero__text">
+            <span class="hero__badge">Selamat datang di</span>
+            <h1 class="hero__title">Portal Layanan<br>Pemerintah<br>Kabupaten Bandung</h1>
+            <p class="hero__description">Satu portal untuk berbagai layanan publik yang mudah, cepat dan transparan.</p>
+            <a href="#" class="hero__cta">Selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero__slide">
+        <img src="assets/images/hero-slide-2.png" alt="Layanan Publik" class="hero__slide-image">
+        <div class="hero__overlay"
+          style="background: linear-gradient(135deg, rgba(27, 94, 32, 0.9) 0%, rgba(56, 142, 60, 0.6) 50%, rgba(67, 160, 71, 0.3) 100%);">
+        </div>
+        <div class="hero__content">
+          <div class="hero__text">
+            <span class="hero__badge">Layanan Digital</span>
+            <h1 class="hero__title">Akses Layanan<br>Publik Lebih<br>Mudah & Cepat</h1>
+            <p class="hero__description">Nikmati kemudahan mengurus dokumen dan perizinan secara online dari mana saja.
+            </p>
+            <a href="#" class="hero__cta">Mulai Sekarang →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero__slide">
+        <img src="assets/images/hero-slide-3.png" alt="Transparansi" class="hero__slide-image">
+        <div class="hero__overlay"
+          style="background: linear-gradient(135deg, rgba(13, 59, 13, 0.9) 0%, rgba(27, 94, 32, 0.65) 50%, rgba(56, 142, 60, 0.35) 100%);">
+        </div>
+        <div class="hero__content">
+          <div class="hero__text">
+            <span class="hero__badge">Transparansi Publik</span>
+            <h1 class="hero__title">Informasi<br>Terbuka untuk<br>Masyarakat</h1>
+            <p class="hero__description">Akses data dan informasi pemerintahan secara transparan dan akuntabel.</p>
+            <a href="#" class="hero__cta">Lihat Informasi →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero__slide">
+        <img src="assets/images/hero-slide-4.png" alt="Inovasi" class="hero__slide-image">
+        <div class="hero__overlay"
+          style="background: linear-gradient(135deg, rgba(21, 75, 21, 0.88) 0%, rgba(46, 125, 50, 0.6) 50%, rgba(76, 175, 80, 0.3) 100%);">
+        </div>
+        <div class="hero__content">
+          <div class="hero__text">
+            <span class="hero__badge">Smart Governance</span>
+            <h1 class="hero__title">Kabupaten<br>Bandung Menuju<br>Smart City</h1>
+            <p class="hero__description">Inovasi teknologi untuk pelayanan publik yang lebih baik dan efisien.</p>
+            <a href="#" class="hero__cta">Pelajari Lebih →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="hero__nav hero__nav--prev" aria-label="Previous slide">‹</button>
+    <button class="hero__nav hero__nav--next" aria-label="Next slide">›</button>
+
+    <!-- Dots -->
+    <div class="hero__dots">
+      <button class="hero__dot hero__dot--active" aria-label="Slide 1"></button>
+      <button class="hero__dot" aria-label="Slide 2"></button>
+      <button class="hero__dot" aria-label="Slide 3"></button>
+      <button class="hero__dot" aria-label="Slide 4"></button>
+    </div>
+  </section>
+
+  <!-- ========== CEK STATUS TIKET ========== -->
+  <section class="ticket-check" id="ticketCheck">
+    <div class="container">
+      <div class="ticket-check__card">
+        <div class="ticket-check__info">
+          <div class="ticket-check__icon">🔍</div>
+          <div class="ticket-check__label">
+            <h3>Cek Status Tiket /<br>Permohonan Layanan</h3>
+            <p>Pantau proses permohonan layanan Anda</p>
+          </div>
+        </div>
+        <div class="ticket-check__divider"></div>
+        <div class="ticket-check__form">
+          <div class="ticket-check__field">
+            <label for="ticketNumber">No. Tiket / Kode Permohonan</label>
+            <input type="text" id="ticketNumber" placeholder="Masukkan nomor tiket / kode permohonan">
+          </div>
+          <div class="ticket-check__field">
+            <label>Masukkan Kode Captcha</label>
+            <div class="ticket-check__captcha">
+              <span class="ticket-check__captcha-code" id="captchaCode">A7K9B</span>
+              <button class="ticket-check__captcha-refresh" id="captchaRefresh" aria-label="Refresh captcha">🔄</button>
+              <input type="text" id="captchaInput" placeholder="Masukkan kode captcha" style="width:160px;">
+            </div>
+          </div>
+          <button class="ticket-check__submit" onclick="checkTicketStatus()">
+            🔍 Cek Status
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LAYANAN BERDASARKAN FASE HIDUP ========== -->
+  <section class="section section--gray" id="layananFaseHidup">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <h2 class="section__title">Layanan Berdasarkan Fase Hidup</h2>
+        <a href="#" class="section__link">Lihat Semua Layanan →</a>
+      </div>
+
+      <div class="lifecycle-grid animate-on-scroll">
+        <!-- Bayi -->
+        <div class="lifecycle-card">
+          <div class="lifecycle-card__icon">👶</div>
+          <h3 class="lifecycle-card__title">Bayi</h3>
+          <p class="lifecycle-card__desc">Layanan untuk kelahiran bayi</p>
+          <a href="#" class="lifecycle-card__link">Lihat Layanan →</a>
+        </div>
+
+        <!-- Anak -->
+        <div class="lifecycle-card">
+          <div class="lifecycle-card__icon">🧒</div>
+          <h3 class="lifecycle-card__title">Anak</h3>
+          <p class="lifecycle-card__desc">Layanan untuk anak-anak</p>
+          <a href="#" class="lifecycle-card__link">Lihat Layanan →</a>
+        </div>
+
+        <!-- Remaja -->
+        <div class="lifecycle-card">
+          <div class="lifecycle-card__icon">🧑‍🎓</div>
+          <h3 class="lifecycle-card__title">Remaja</h3>
+          <p class="lifecycle-card__desc">Layanan untuk remaja</p>
+          <a href="#" class="lifecycle-card__link">Lihat Layanan →</a>
+        </div>
+
+        <!-- Dewasa -->
+        <div class="lifecycle-card">
+          <div class="lifecycle-card__icon">🧑‍💼</div>
+          <h3 class="lifecycle-card__title">Dewasa</h3>
+          <p class="lifecycle-card__desc">Layanan untuk masyarakat dewasa</p>
+          <a href="#" class="lifecycle-card__link">Lihat Layanan →</a>
+        </div>
+
+        <!-- Lanjut Usia -->
+        <div class="lifecycle-card">
+          <div class="lifecycle-card__icon">🧓</div>
+          <h3 class="lifecycle-card__title">Lanjut Usia / Senja</h3>
+          <p class="lifecycle-card__desc">Layanan untuk masyarakat lanjut usia</p>
+          <a href="#" class="lifecycle-card__link">Lihat Layanan →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KATEGORI LAYANAN ========== -->
+  <section class="section section--white" id="kategoriLayanan">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <h2 class="section__title">Kategori Layanan</h2>
+        <a href="#" class="section__link">Lihat Semua Kategori →</a>
+      </div>
+
+      <div class="category-grid animate-on-scroll">
+        <!-- Wirausaha -->
+        <a href="#" class="category-card-v2">
+          <img src="assets/images/wirausaha.png" alt="Wirausaha" class="category-card-v2__img">
+          <div class="category-card-v2__overlay"></div>
+          <div class="category-card-v2__content">
+            <h3 class="category-card-v2__title">Wirausaha</h3>
+            <p class="category-card-v2__desc">Layanan untuk pelaku usaha</p>
+          </div>
+        </a>
+
+        <!-- Wisatawan -->
+        <a href="#" class="category-card-v2">
+          <img src="assets/images/wisatawan.png" alt="Wisatawan" class="category-card-v2__img">
+          <div class="category-card-v2__overlay"></div>
+          <div class="category-card-v2__content">
+            <h3 class="category-card-v2__title">Wisatawan</h3>
+            <p class="category-card-v2__desc">Informasi dan layanan untuk wisatawan</p>
+          </div>
+        </a>
+
+        <!-- Pelajar -->
+        <a href="#" class="category-card-v2">
+          <img src="assets/images/pelajar.png" alt="Pelajar" class="category-card-v2__img">
+          <div class="category-card-v2__overlay"></div>
+          <div class="category-card-v2__content">
+            <h3 class="category-card-v2__title">Pelajar</h3>
+            <p class="category-card-v2__desc">Layanan untuk pelajar dan mahasiswa</p>
+          </div>
+        </a>
+
+        <!-- Warga Kab. Bandung -->
+        <a href="#" class="category-card-v2">
+          <img src="assets/images/warga.png" alt="Warga Kab. Bandung" class="category-card-v2__img">
+          <div class="category-card-v2__overlay"></div>
+          <div class="category-card-v2__content">
+            <h3 class="category-card-v2__title">Warga Kab. Bandung</h3>
+            <p class="category-card-v2__desc">Layanan khusus untuk warga Kab. Bandung</p>
+          </div>
+        </a>
+
+        <!-- Wajib Pajak -->
+        <a href="#" class="category-card-v2">
+          <img src="assets/images/wajibpajak.png" alt="Wajib Pajak" class="category-card-v2__img">
+          <div class="category-card-v2__overlay"></div>
+          <div class="category-card-v2__content">
+            <h3 class="category-card-v2__title">Wajib Pajak</h3>
+            <p class="category-card-v2__desc">Layanan informasi dan pembayaran pajak</p>
+          </div>
+        </a>
+
+        <!-- ASN Kab. Bandung -->
+        <a href="#" class="category-card-v2">
+          <img src="assets/images/asn.png" alt="ASN Kab. Bandung" class="category-card-v2__img">
+          <div class="category-card-v2__overlay"></div>
+          <div class="category-card-v2__content">
+            <h3 class="category-card-v2__title">ASN Kab. Bandung</h3>
+            <p class="category-card-v2__desc">Layanan pemerintahan untuk ASN Kab. Bandung</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LAYANAN YANG SERING DIAKSES ========== -->
+  <section class="section section--gray" id="layananSering">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <h2 class="section__title">Layanan yang Sering Diakses</h2>
+        <a href="#" class="section__link">Lihat Semua Layanan →</a>
+      </div>
+
+      <div class="frequent-grid animate-on-scroll">
+        <!-- Ganti KK -->
+        <div class="frequent-card">
+          <div class="frequent-card__icon">📄</div>
+          <div class="frequent-card__content">
+            <h3 class="frequent-card__title">Ganti Kartu Keluarga (KK)</h3>
+            <a href="#" class="frequent-card__link">Ajukan →</a>
+          </div>
+        </div>
+
+        <!-- Perizinan Usaha -->
+        <div class="frequent-card">
+          <div class="frequent-card__icon">🏢</div>
+          <div class="frequent-card__content">
+            <h3 class="frequent-card__title">Perizinan Usaha</h3>
+            <a href="#" class="frequent-card__link">Ajukan →</a>
+          </div>
+        </div>
+
+        <!-- Surat Izin Praktik -->
+        <div class="frequent-card">
+          <div class="frequent-card__icon">📝</div>
+          <div class="frequent-card__content">
+            <h3 class="frequent-card__title">Surat Izin Praktik (SIP)</h3>
+            <a href="#" class="frequent-card__link">Ajukan →</a>
+          </div>
+        </div>
+
+        <!-- PBB -->
+        <div class="frequent-card">
+          <div class="frequent-card__icon">🏠</div>
+          <div class="frequent-card__content">
+            <h3 class="frequent-card__title">PBB</h3>
+            <p style="font-size:0.75rem;color:#9E9E9E;margin-top:2px;">(Pajak Bumi & Bangunan)</p>
+            <a href="#" class="frequent-card__link">Bayar →</a>
+          </div>
+        </div>
+
+        <!-- Pengaduan -->
+        <div class="frequent-card">
+          <div class="frequent-card__icon">📢</div>
+          <div class="frequent-card__content">
+            <h3 class="frequent-card__title">Pengaduan Masyarakat</h3>
+            <a href="#" class="frequent-card__link">Laporkan →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTIKEL & INFORMASI TERBARU ========== -->
+  <section class="section section--white" id="artikelInformasi">
+    <div class="container">
+      <div class="section__header animate-on-scroll">
+        <h2 class="section__title">Artikel & Informasi Terbaru</h2>
+        <a href="#" class="section__link">Lihat Semua Artikel →</a>
+      </div>
+
+      <div class="article-grid animate-on-scroll">
+        <!-- Article 1 -->
+        <article class="article-card">
+          <div class="article-card__image">
+            <img src="assets/images/article-1.png" alt="Peningkatan Layanan Publik" loading="lazy">
+            <span class="article-card__badge article-card__badge--pengumuman">Pengumuman</span>
+          </div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">Peningkatan Layanan Publik di Kabupaten Bandung</h3>
+            <div class="article-card__date">📅 11 Agustus 2026</div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article-card">
+          <div class="article-card__image">
+            <img src="assets/images/article-2.png" alt="Pembayaran Pajak Daerah" loading="lazy">
+            <span class="article-card__badge article-card__badge--berita">Berita</span>
+          </div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">Pembayaran Pajak Daerah Kini Semakin Mudah</h3>
+            <div class="article-card__date">📅 10 Agustus 2026</div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article-card">
+          <div class="article-card__image">
+            <img src="assets/images/article-3.png" alt="Tips Memulai Usaha" loading="lazy">
+            <span class="article-card__badge article-card__badge--tips">Tips</span>
+          </div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">Tips Memulai Usaha bagi Wirausaha Pemula</h3>
+            <div class="article-card__date">📅 9 Agustus 2026</div>
+          </div>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article-card">
+          <div class="article-card__image">
+            <img src="assets/images/article-4.png" alt="Jadwal Pelayanan Keliling" loading="lazy">
+            <span class="article-card__badge article-card__badge--informasi">Informasi</span>
+          </div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">Jadwal Pelayanan Keliling Bulan Agustus 2026</h3>
+            <div class="article-card__date">📅 8 Agustus 2026</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HARGA PANGAN HARI INI ========== -->
+  <section class="food-price" id="hargaPangan">
+    <div class="container">
+      <div class="food-price__header animate-on-scroll">
+        <div>
+          <h2 class="food-price__title">Harga Pangan Hari Ini</h2>
+          <div class="food-price__meta">
+            <span>📍 Informasi komoditas pasar Kabupaten Bandung</span>
+            <span>📅 Data tanggal 11 Agustus 2026</span>
+          </div>
+        </div>
+        <a href="#" class="section__link">Lihat Semua →</a>
+      </div>
+
+      <div class="food-price__scroll-container animate-on-scroll">
+        <div class="food-price__grid">
+          <!-- Bawang Bombay -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">BAWANG<br>BOMBAY</div>
+              <div class="food-price-card__trend food-price-card__trend--up">↗</div>
+            </div>
+            <div class="food-price-card__price">Rp 34.333,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Bawang Daun -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">BAWANG<br>DAUN</div>
+              <div class="food-price-card__trend food-price-card__trend--down">↘</div>
+            </div>
+            <div class="food-price-card__price">Rp 14.333,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Bawang Merah -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">BAWANG<br>MERAH</div>
+              <div class="food-price-card__trend food-price-card__trend--up">↗</div>
+            </div>
+            <div class="food-price-card__price">Rp 34.777,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Bawang Merah Batu -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">BAWANG<br>MERAH BATU</div>
+              <div class="food-price-card__trend food-price-card__trend--stable">→</div>
+            </div>
+            <div class="food-price-card__price">Rp 29.500,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Beras Medium -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">BERAS<br>MEDIUM</div>
+              <div class="food-price-card__trend food-price-card__trend--down">↘</div>
+            </div>
+            <div class="food-price-card__price">Rp 14.000,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Beras Premium -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">BERAS<br>PREMIUM</div>
+              <div class="food-price-card__trend food-price-card__trend--up">↗</div>
+            </div>
+            <div class="food-price-card__price">Rp 16.500,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Cabai Merah -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">CABAI<br>MERAH</div>
+              <div class="food-price-card__trend food-price-card__trend--up">↗</div>
+            </div>
+            <div class="food-price-card__price">Rp 45.000,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+
+          <!-- Cabai Rawit -->
+          <div class="food-price-card">
+            <div class="food-price-card__header">
+              <div class="food-price-card__name">CABAI<br>RAWIT</div>
+              <div class="food-price-card__trend food-price-card__trend--up">↗</div>
+            </div>
+            <div class="food-price-card__price">Rp 52.000,00</div>
+            <div class="food-price-card__unit">Kilogram</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER LINKS ========== -->
+  <section class="footer-links" id="footerLinks">
+    <div class="container">
+      <div class="footer-links__grid animate-on-scroll">
+        <!-- Bantuan -->
+        <div class="footer-link-item">
+          <div class="footer-link-item__icon">❓</div>
+          <div>
+            <h4 class="footer-link-item__title">Bantuan</h4>
+            <p class="footer-link-item__desc">Pusat bantuan dan panduan penggunaan</p>
+            <a href="#" class="footer-link-item__action">Kunjungi →</a>
+          </div>
+        </div>
+
+        <!-- Pengaduan -->
+        <div class="footer-link-item">
+          <div class="footer-link-item__icon">📢</div>
+          <div>
+            <h4 class="footer-link-item__title">Pengaduan</h4>
+            <p class="footer-link-item__desc">Sampaikan keluhan atau pengaduan Anda</p>
+            <a href="#" class="footer-link-item__action">Buat Pengaduan →</a>
+          </div>
+        </div>
+
+        <!-- Syarat & Ketentuan -->
+        <div class="footer-link-item">
+          <div class="footer-link-item__icon">📜</div>
+          <div>
+            <h4 class="footer-link-item__title">Syarat & Ketentuan</h4>
+            <p class="footer-link-item__desc">Baca syarat dan ketentuan layanan kami</p>
+            <a href="#" class="footer-link-item__action">Selengkapnya →</a>
+          </div>
+        </div>
+
+        <!-- Kebijakan Privasi -->
+        <div class="footer-link-item">
+          <div class="footer-link-item__icon">🔒</div>
+          <div>
+            <h4 class="footer-link-item__title">Kebijakan Privasi</h4>
+            <p class="footer-link-item__desc">Informasi kebijakan privasi dan perlindungan data</p>
+            <a href="#" class="footer-link-item__action">Selengkapnya →</a>
+          </div>
+        </div>
+
+        <!-- Unduh Aplikasi -->
+        <div class="footer-link-item">
+          <div class="footer-link-item__icon">📱</div>
+          <div>
+            <h4 class="footer-link-item__title">Unduh Aplikasi</h4>
+            <p class="footer-link-item__desc">Akses layanan lebih mudah melalui aplikasi mobile</p>
+            <a href="#" class="footer-link-item__action">Unduh Sekarang →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAIN FOOTER ========== -->
+  <footer class="footer" id="mainFooter">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div>
+          <div class="footer__brand">
+            <div class="footer__logo"><img src="assets/images/logo.png" alt="Logo Kabupaten Bandung" width="36" height="36"></div>
+            <div>
+              <div class="footer__brand-title">Pemerintah Kabupaten Bandung</div>
+              <p class="footer__brand-address">
+                Jl. Raya Soreang No. 17, Soreang,<br>
+                Kabupaten Bandung, Jawa Barat 40911<br>
+                Telp. (022) 589-1000
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ikuti Kami -->
+        <div>
+          <h4 class="footer__section-title">Ikuti Kami</h4>
+          <div class="footer__contact-item">🌐 bandungkab.go.id</div>
+          <div class="footer__contact-item">📘 Facebook Pemkab Bandung</div>
+          <div class="footer__contact-item">📸 Instagram @pemkabbandung</div>
+          <div class="footer__contact-item">🐦 Twitter @pemkabbandung</div>
+          <div class="footer__contact-item">▶️ YouTube Pemkab Bandung</div>
+        </div>
+
+        <!-- Unduh Aplikasi Mobile -->
+        <div>
+          <h4 class="footer__section-title">Unduh Aplikasi Mobile</h4>
+          <p class="footer__app-desc">Akses layanan lebih mudah melalui aplikasi mobile</p>
+          <div class="footer__app-buttons">
+            <a href="#" class="footer__app-btn">▶️ Google Play</a>
+            <a href="#" class="footer__app-btn">🍎 App Store</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Pemerintah Kabupaten Bandung. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
