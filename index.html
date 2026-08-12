@@ -323,7 +323,7 @@
         </a>
 
         <!-- Warga Kab. Bandung -->
-        <a href="#" class="category-card-v2">
+        <a href="#" class="category-card-v2" onclick="openWargaModal(event)">
           <img src="assets/images/warga.png" alt="Warga Kab. Bandung" class="category-card-v2__img">
           <div class="category-card-v2__overlay"></div>
           <div class="category-card-v2__content">
@@ -675,6 +675,65 @@
       </div>
     </div>
   </footer>
+
+  <!-- ========== MODAL WARGA KAB. BANDUNG ========== -->
+  <!-- ========== MODAL WARGA KAB. BANDUNG ========== -->
+  <div class="modal" id="wargaModal">
+    <div class="modal__overlay" onclick="closeWargaModal()"></div>
+    <div class="modal__content">
+      <div class="modal__hero">
+        <img src="assets/images/warga.png" alt="Warga Kab. Bandung" class="modal__hero-img">
+        <button class="modal__close" onclick="closeWargaModal()">✕</button>
+      </div>
+      
+      <div class="modal__floating-header">
+        <p class="modal__floating-subtitle">Layanan yang sesuai dengan anda</p>
+        <h3 class="modal__floating-title">Warga Kab. Bandung</h3>
+        <p class="modal__floating-desc">Layanan yang sering digunakan oleh Warga Kab. Bandung</p>
+      </div>
+
+      <div class="modal__body">
+        <div class="modal__service-list">
+          <a href="#" class="modal__service-item">
+            <div class="modal__service-icon modal__service-icon--green">
+              <span class="modal__service-icon-inner">📄</span>
+            </div>
+            <div class="modal__service-text">
+              <h4 class="modal__service-title">Ganti Kartu Keluarga (KK)</h4>
+              <p class="modal__service-desc">Layanan untuk penggantian, pembaruan, atau pembuatan KK baru.</p>
+            </div>
+          </a>
+          <a href="#" class="modal__service-item">
+            <div class="modal__service-icon modal__service-icon--green">
+              <span class="modal__service-icon-inner">📝</span>
+            </div>
+            <div class="modal__service-text">
+              <h4 class="modal__service-title">Surat Izin Praktik (SIP)</h4>
+              <p class="modal__service-desc">Pengajuan surat izin untuk tenaga kesehatan dan profesi lainnya.</p>
+            </div>
+          </a>
+          <a href="#" class="modal__service-item">
+            <div class="modal__service-icon modal__service-icon--green">
+              <span class="modal__service-icon-inner">📢</span>
+            </div>
+            <div class="modal__service-text">
+              <h4 class="modal__service-title">Pengaduan Masyarakat</h4>
+              <p class="modal__service-desc">Sampaikan keluhan atau aspirasi terkait layanan publik.</p>
+            </div>
+          </a>
+          <a href="#" class="modal__service-item">
+            <div class="modal__service-icon modal__service-icon--green">
+              <span class="modal__service-icon-inner">🏥</span>
+            </div>
+            <div class="modal__service-text">
+              <h4 class="modal__service-title">Antrian Puskesmas</h4>
+              <p class="modal__service-desc">Pendaftaran antrian online untuk layanan di puskesmas.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>

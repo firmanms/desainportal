@@ -220,3 +220,21 @@ function checkTicketStatus() {
   // Simulate check
   alert('Mencari status tiket: ' + ticketInput.value + '...\n\nFitur ini akan segera tersedia.');
 }
+
+/* ---------- Modals ---------- */
+function openWargaModal(e) {
+  if (e) e.preventDefault();
+  const modal = document.getElementById('wargaModal');
+  if (modal) {
+    modal.classList.add('modal--active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeWargaModal() {
+  const modal = document.getElementById('wargaModal');
+  if (modal) {
+    modal.classList.remove('modal--active');
+    document.body.style.overflow = '';
+  }
+}
